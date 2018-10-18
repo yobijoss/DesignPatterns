@@ -20,9 +20,11 @@ class DogRepository {
                     Dog("Juanito", 2, "Tranquilo", DogSize.LARGE),
                     Dog("Angelito", 3, "Curioso", DogSize.MEDIUM),
                     Dog("Puchurrin", 6, "Enojón", DogSize.SMALL, true, listOf("reflujo", "enanismo")),
-                    Dog("Pepino", 1, "Flojo", DogSize.MEDIUM),
+                    Dog("Sparky", 6, "Flojo", DogSize.LARGE, true, listOf("reflujo", "enanismo")),
+                    Dog("Pepino", 3, "Flojo", DogSize.MEDIUM),
                     Dog("Kenia", 1, "Triste", DogSize.SMALL, true, listOf("Ceguera")),
-                    Dog("Calabacin", 4, "Hiperactivo", DogSize.MEDIUM)
+                    Dog("Pepinillo", 4, "Hiperactivo", DogSize.MEDIUM),
+                    Dog("Calabacin", 1, "Hiperactivo", DogSize.SMALL)
             )
             withContext(Dispatchers.Main) {
                 dogListLiveData.value = dogList;
