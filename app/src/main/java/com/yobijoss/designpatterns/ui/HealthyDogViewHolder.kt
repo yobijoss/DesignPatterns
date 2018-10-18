@@ -30,7 +30,7 @@ class HealthyDogViewHolder(private val inflatedView: View) : DogViewHolder(infla
 
         inflatedView.titleEstado.setBackgroundResource(color)
 
-        val title = "Perrito ${inflatedView.context.getString(size)} Sano, ${dog.nature}:)"
+        val title = "Perrito ${inflatedView.context.getString(size)} Sano, ${dog.nature}"
         inflatedView.titleEstado.text = title
     }
 
