@@ -11,4 +11,6 @@
     <string name="export">Exportar</string>
     <string name="sort">Ordenar</string>
 
+    <string name="file_provider_authority" translatable="false"> com.yobijoss.designpatterns.fileprovider</string>
+
 </resources>

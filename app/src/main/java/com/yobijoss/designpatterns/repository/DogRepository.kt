@@ -1,6 +1,5 @@
 package com.yobijoss.designpatterns.repository
 
-import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import com.yobijoss.designpatterns.model.Dog
 import com.yobijoss.designpatterns.model.DogSize
