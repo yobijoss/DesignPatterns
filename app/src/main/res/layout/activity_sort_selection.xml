@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.SortSelectionActivity">
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:checkedButton="@+id/radio_name">
+
+        <RadioButton
+            android:id="@+id/radio_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/name"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/radio_age"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="@string/age"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/radio_nature"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="@string/nature"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/radio_size"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="@string/size"
+            android:textSize="18sp" />
+
+    </RadioGroup>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

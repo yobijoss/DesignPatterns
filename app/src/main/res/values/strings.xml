@@ -1,4 +1,12 @@
 <resources>
-    <string name="app_name">Design Pattern Samples</string>
+    <string name="app_name">Adopta Perritos</string>
+    <string name="large_size">Grande</string>
+    <string name="small_size">Chico</string>
+    <string name="medium_size">Mediano</string>
+    <string name="ordenar_por">Ordenar por</string>
+    <string name="name">Nombre</string>
+    <string name="age">Edad</string>
+    <string name="nature">Naturaleza</string>
+    <string name="size">Tamaño</string>
 
 </resources>
