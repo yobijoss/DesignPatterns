@@ -26,7 +26,7 @@ class DogListSorter {
     }
 
     private fun sortBySize(dogList: List<Dog>) {
-        Collections.sort(dogList, DogNatureComparator(DogAgeComparator(DogNameComparator())))
+        Collections.sort(dogList, DogSizeComparator(DogAgeComparator(DogNameComparator())))
     }
 
 }

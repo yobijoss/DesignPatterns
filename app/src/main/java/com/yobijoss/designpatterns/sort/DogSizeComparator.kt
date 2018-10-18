@@ -6,6 +6,6 @@ class DogSizeComparator(comparator: DogComparator) : DogComparatorDecorator(comp
 
     override fun compare(dog1: Dog, dog2: Dog): Int {
         val result = dog1.size.compareTo(dog2.size)
-        return if (result == 0) result else super.compare(dog1, dog2)
+        return if (result != 0) result else super.compare(dog1, dog2)
     }
 }

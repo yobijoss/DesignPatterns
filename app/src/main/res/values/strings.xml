@@ -8,5 +8,7 @@
     <string name="age">Edad</string>
     <string name="nature">Naturaleza</string>
     <string name="size">Tamaño</string>
+    <string name="export">Exportar</string>
+    <string name="sort">Ordenar</string>
 
 </resources>

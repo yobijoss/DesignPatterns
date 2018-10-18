@@ -3,6 +3,8 @@ package com.yobijoss.designpatterns.activity
 import android.app.Activity
 import android.content.Intent
 import android.os.Bundle
+import android.view.Menu
+import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
@@ -14,13 +16,17 @@ import com.yobijoss.designpatterns.ui.DogAdapter
 import com.yobijoss.designpatterns.viewmodel.DogsViewModel
 import kotlinx.android.synthetic.main.activity_dog_adoption_list.*
 
+
 class DogAdoptionListActivity : AppCompatActivity() {
 
     val REQUEST_SORT_CODE = 1
-    val SORT_OPTION = "sortOption"
-
 
     private lateinit var viewModel: DogsViewModel
+
+    companion object {
+        val SORT_OPTION = "sortOption"
+
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -34,7 +40,22 @@ class DogAdoptionListActivity : AppCompatActivity() {
         viewModel.dogList.observe(this, Observer { showDogs(it, Sort.NAME) })
     }
 
+    override fun onCreateOptionsMenu(menu: Menu): Boolean {
+        val inflater = menuInflater
+        inflater.inflate(R.menu.main_menu, menu)
+        return true
+    }
 
+    override fun onOptionsItemSelected(item: MenuItem?): Boolean {
+        item?.run {
+            if (item.itemId == R.id.menu_sort) {
+                startActivityForResult(Intent( this@DogAdoptionListActivity, SortSelectionActivity::class.java),
+                        REQUEST_SORT_CODE)
+            }
+        }
+
+        return super.onOptionsItemSelected(item)
+    }
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
